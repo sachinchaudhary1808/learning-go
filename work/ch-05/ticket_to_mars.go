@@ -7,12 +7,12 @@ import (
 
 func main() {
 	const (
-		distance      = 62100000 // km/s
-		depature_date = "13/10/2020"
-		min_speed     = 16 // km/s
-		max_speed     = 30 // km/s
-		min_price     = 36 // million
-		max_price     = 50 // million
+		distance     = 62100000 // km/s
+		depatureDate = "13/10/2020"
+		minSpeed     = 16 // km/s
+		maxSpeed     = 30 // km/s
+		minPrice     = 36 // million
+		maxPrice     = 50 // million
 	)
 
 	fmt.Printf("%-16v %4v %-10v %5v\n", "Spaceline", "Days", "Trip type", "Price")
@@ -34,18 +34,18 @@ func main() {
 		speed := rand.Intn(15) + 16
 		price := 20.0 + speed
 
-		trip_type := ""
+		tripType := ""
 		if rand.Intn(2) == 0 {
-			trip_type = "One-way"
+			tripType = "One-way"
 		} else {
-			trip_type = "Round-trip"
+			tripType = "Round-trip"
 			price = (20 + speed) * 2
 
 		}
 
-		hours_inday := 24
-		days := distance / (speed * 60 * 60 * hours_inday)
+		hoursInday := 24
+		days := distance / (speed * 60 * 60 * hoursInday)
 
-		fmt.Printf("%-16v %3v %-11v $%4v\n", Spaceline, days, trip_type, price)
+		fmt.Printf("%-16v %3v %-11v $%4v\n", Spaceline, days, tripType, price)
 	}
 }
