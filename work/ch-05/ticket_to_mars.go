@@ -1,3 +1,4 @@
+// package main is for just learning
 package main
 
 import (
