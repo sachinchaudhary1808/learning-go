@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	message := "uv Cómo e vagreangvbany fcnpr fgngvba"
+	message := "uv vagreangvbany fcnpr fgngvba"
+
+	fmt.Println(len(message))
 
 	for i := 0; i < len(message); i++ {
 		c := message[i]

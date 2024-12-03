@@ -1,3 +1,4 @@
+// does nothing just for learning purpose
 package main
 
 import (
@@ -6,7 +7,7 @@ import (
 )
 
 func main() {
-	question := "¿xbcdefghijklmnopqrstuvwxyz"
+	question := "¿Cómo estás?"
 
 	fmt.Println(len(question), "bytes")
 	fmt.Println(utf8.RuneCountInString(question), "runes")

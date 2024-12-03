@@ -1,11 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	message := "shalom"
-	for i := 0; i < 6; i++ {
-		c := message[i]
-		fmt.Printf("%c\n", c)
+	for i := 0; i < len(message); i++ {
+		fmt.Printf("%c  %[1]v\n", message[i])
+
 	}
 }

@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	countdown := "Launch in T minus " + "10 seconds."
+	fmt.Println(countdown)
+
+	// countdown = "launch in T minus " + 10 + " seconds."
+}
