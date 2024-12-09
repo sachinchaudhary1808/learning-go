@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
-	countdown, err := strconv.Atoi("10")
+	countdown, err := strconv.Atoi("255")
 	if err != nil {
 		println("something went wrong")
+	} else {
+		fmt.Println(countdown)
 	}
-	fmt.Println(countdown)
 }
