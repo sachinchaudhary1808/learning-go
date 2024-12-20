@@ -1,5 +1,5 @@
 {
-  description = "python pratice";
+  description = "go learning";
 
   inputs = {nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";};
 
